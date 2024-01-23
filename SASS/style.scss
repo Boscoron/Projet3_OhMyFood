@@ -161,7 +161,7 @@ main {
 				align-items: center;
 				width: 24px;
 				height: 24px;
-				background-color: $bground-color_violet;
+				background-color: $bg-color_violet;
 				color: $white;
 				border-radius: 100%;
 				margin-left: -50px;
@@ -174,7 +174,7 @@ main {
 				color: $grey;
 			}
 			.fa-store {
-				color: $color_3;
+				color: $bg-color_violet;
 			}
 		}
 	}
