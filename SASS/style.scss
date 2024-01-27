@@ -9,7 +9,7 @@ $bg-color_black: #353535;
 $color-form-loader: white transparent white transparent;
 
 @mixin backgroundRose {
-	background: linear-gradient(to top, #9356DC, #FF79DA);
+	background: linear-gradient(to top, $bg-color_violet, #FF79DA);
 }
 
 @keyframes disappear {
