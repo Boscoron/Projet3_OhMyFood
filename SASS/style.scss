@@ -246,7 +246,8 @@ main {
 				}
 				.h-full {
 					opacity: 0;
-					transition: transform 200ms;
+					transition: 1500ms;
+					transform: scale(0.8);
 					&:hover {
 						opacity: 1;
 						@include backgroundRose;
