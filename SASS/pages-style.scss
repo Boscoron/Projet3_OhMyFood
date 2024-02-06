@@ -88,11 +88,12 @@ header {
 	    transition: 1500ms;
 		transform: scale(0.8);
 	    position: absolute;
+		background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  		-webkit-background-clip: text;
+          background-clip: text;
+  		color: transparent;
 	    &:hover {
 		    opacity: 1;
-		    background-image: linear-gradient(to top, #9356DC, #FF79DA);
-		    background-clip: text;
-		    color: $white;
 		    transform: scale(1.2);
 		    position: absolute;
 	    }
@@ -100,15 +101,19 @@ header {
     .h-empty {
 	    display: flex;
 	    justify-content: flex-end;
+		&:hover {
+			transition: opacity(0) 700ms;
+		}
     }
     .like-btn {
 	    display: flex;
 	    justify-content: flex-end;
 	    align-items: center;
-	    padding-right: 70px;
-	    margin-top: -35px;
-	    font-size: 28px;
+	    position: absolute;
+  		left: 85%;
+  		top: 3.8%;
 	    cursor: pointer;
+		font-size: 28px;
     }
 
     .card-list {
@@ -136,17 +141,28 @@ header {
 	        color: $black;
 	        position: relative;
 	        overflow: hidden;
+			animation: appear 1s;
             .card-content { 
                 position: relative;
 	            margin-left: 14px;
 	            margin-top: 14px;
 	            p { 
 					font-size: 17px;
+					max-width: 85%;
+  					overflow: hidden;
+  					white-space: nowrap;
+  					text-overflow: ellipsis;
+  					vertical-align: top;
+					&:hover {
+						max-width: 60%;
+					}
                 }
                 .card-title {
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                    font-weight: 700;
+                    max-width: 70%;
+  					overflow: hidden;
+  					white-space: nowrap;
+  					text-overflow: ellipsis;
+  					vertical-align: top;
                 }
                 .prix {
                     display: flex;
@@ -274,12 +290,20 @@ footer {
 		    justify-content: center;
 		    width: 100%;
 	    }
-	.like-btn {
-		margin-top: 50px;
-		margin-left: 20px;
-	}
-	svg {
-		height: 84px;
+		.like-btn {
+			margin-left: -5%;
+		}
+		svg {
+			height: 84px;
+		}
 	}
 }
-}
+
+@keyframes appear {
+	0% {
+	  transform: scale(0);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
