@@ -248,12 +248,12 @@ main {
 					opacity: 0;
 					transition: 1500ms;
 					transform: scale(0.8);
-					&:hover {
-						opacity: 1;
-						@include backgroundRose;
+					@include backgroundRose;
 						-webkit-background-clip: text;
 						background-clip: text;
 						color: transparent;
+					&:hover {
+						opacity: 1;
 						transform: scale(1.2);
 					}
 				}
@@ -264,6 +264,9 @@ main {
 					font-size: 18px;
 					margin-bottom: 10px;
 					font-weight: 700;
+				}
+				.h-empty:hover {
+					transition: opacity(0) 700ms;
 				}
 			}
 		}
