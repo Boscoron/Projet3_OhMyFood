@@ -142,12 +142,13 @@ main {
   animation: appear 1s;
 }
 
-#card3 {
+.card:nth-child(4) {
   animation: appear 1.5s;
 }
 
-
-
+.card:nth-child(5) {
+  animation: appear 1.7s;
+}
 
 @keyframes appear {
   0% {
