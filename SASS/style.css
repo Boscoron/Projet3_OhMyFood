@@ -242,9 +242,7 @@ main {
   cursor: pointer;
   margin-left: -20px;
 }
-.restaurants .card-list .card .card-content .h-empty:hover {
-  transition: opacity 700ms;
-}
+
 .restaurants .card-list .card .card-content .h-full {
   opacity: 0;
   transition: 1500ms;

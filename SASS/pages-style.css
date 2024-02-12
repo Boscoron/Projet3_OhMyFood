@@ -95,9 +95,6 @@ main {
   display: flex;
   justify-content: flex-end;
 }
-.restaurants .card-list .card .card-content .h-empty:hover {
-  transition: opacity 700ms;
-}
 .restaurants .like-btn {
   display: flex;
   justify-content: flex-end;
